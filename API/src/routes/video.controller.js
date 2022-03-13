@@ -1,4 +1,4 @@
-
+import videos from "./videos"; //importo el modelo creado
 const controller = {};
 
 controller.index = (req,res)=>{
@@ -8,6 +8,8 @@ controller.getVideo = (req,res)=>{
     res.send('obtiene video')
 }
 controller.crearVideo = (req,res)=>{
+    const video = new videos (req.body)
+    console.log(video)
     res.send('crear video')
 }
 controller.deleteVideo = (req,res)=>{

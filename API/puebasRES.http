@@ -1,1 +1,10 @@
-GET http://localhost:3000/videos/20
+@api=http://localhost:3000
+
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://lalal/sds/56565.com",
+    "titulo":"hola",
+    "descripcion":"como estas?"
+}
